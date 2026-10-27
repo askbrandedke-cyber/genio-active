@@ -1,0 +1,386 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>GENiO Active</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="GENiO Active: high-waisted, super stretchy activewear from Nairobi: sculpting sets, open-back jumpsuits and head gear, cut for real curves in sizes S to XXXL.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<div class="loader" id="loader" aria-hidden="true">
+  <div class="loader-mark">GEN<span class="i">i</span>O</div>
+  <div class="loader-bar"><span></span></div>
+</div>
+
+<div class="cursor" id="cursor" aria-hidden="true"><span></span></div>
+
+<a class="skip" href="#shop">Skip to the shop</a>
+
+<header class="site-head" id="top">
+  <div class="head-inner">
+    <a class="wordmark" href="#top" aria-label="GENiO Active, back to top"><svg class="mark" viewBox="0 0 118.71 91.23" aria-hidden="true"><path d="M87,59.53H43.54L103.05,0H67.73a19.78,19.78,0,0,0-14,5.79L0,59.54H43.52L75.21,91.23H98.93a19.78,19.78,0,0,0,19.78-19.77V29.75H87Z"/></svg>GEN<span class="i">i</span>O<small>ACTIVE</small></a>
+    <nav class="main-nav" aria-label="Main">
+      <a href="#lines">Collections</a>
+      <a href="#shop">Shop</a>
+      <a href="#studio">Build a look</a>
+      <a href="#fit">The fit</a>
+      <a href="#story">Our story</a>
+    </nav>
+    <div class="head-tools">
+      <div class="currency" role="group" aria-label="Currency">
+        <button type="button" id="cur-usd" class="is-on" data-cur="USD" aria-pressed="true">USD</button>
+        <button type="button" id="cur-kes" data-cur="KES" aria-pressed="false">KSh</button>
+      </div>
+      <button type="button" class="icon-btn" id="open-search" aria-label="Search">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.5 15.5 21 21"/></svg>
+      </button>
+      <button type="button" class="icon-btn bag-btn" id="open-bag" aria-label="Open bag">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l-1.2 12.2a1 1 0 0 1-1 .8H7.2a1 1 0 0 1-1-.8z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg>
+        <span class="bag-count" id="bag-count">0</span>
+      </button>
+      <button type="button" class="icon-btn menu-btn" id="open-menu" aria-label="Open menu" aria-expanded="false">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 8h16M4 16h16"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section class="hero" aria-labelledby="hero-title">
+    <canvas class="hero-canvas" id="hero-canvas" aria-hidden="true"></canvas>
+    <div class="hero-grain" aria-hidden="true"></div>
+    <figure class="hero-portal">
+      <video id="hero-video" muted loop playsinline autoplay preload="metadata" aria-label="GENiO campaign film: Move freely"></video>
+      <figcaption>Move freely · Campaign film</figcaption>
+    </figure>
+    <div class="wrap hero-inner">
+      <p class="eyebrow">GEN<span class="i">i</span>O Active · Nairobi</p>
+      <h1 class="hero-title" id="hero-title">
+        <span class="line"><span>Luxury</span></span>
+        <span class="line"><span><em>in</em> Motion</span></span>
+      </h1>
+      <div class="hero-foot">
+        <p class="hero-lede">Women's activewear from Nairobi. Sculpting sets, open-back jumpsuits and head gear, cut for real curves in sizes S to XXXL.</p>
+        <div class="hero-cta">
+          <a class="btn btn-solid" href="#shop">Shop the collection</a>
+          <a class="btn btn-ghost" href="#fit">Find your fit</a>
+        </div>
+      </div>
+    </div>
+    <div class="hero-meta wrap" aria-hidden="true">
+      <span>Move your cursor across the fabric</span>
+      <span class="scroll-cue">Scroll</span>
+    </div>
+  </section>
+
+  <!-- MARQUEE -->
+  <div class="marquee" aria-label="Brand promises">
+    <div class="marquee-track">
+      <span>High-waisted</span><i></i><span>Super stretchy</span><i></i><span>Anti-cellulite</span><i></i><span>Sizes S – XXXL</span><i></i><span>Born in Nairobi</span><i></i><span>Free delivery over $300</span><i></i>
+      <span aria-hidden="true">High-waisted</span><i></i><span aria-hidden="true">Super stretchy</span><i></i><span aria-hidden="true">Anti-cellulite</span><i></i><span aria-hidden="true">Sizes S – XXXL</span><i></i><span aria-hidden="true">Born in Nairobi</span><i></i><span aria-hidden="true">Free delivery over $300</span><i></i>
+    </div>
+  </div>
+
+  <!-- COLLECTIONS -->
+  <section class="lines" id="lines" aria-labelledby="lines-title">
+    <div class="wrap section-head">
+      <p class="eyebrow">Collections</p>
+      <h2 id="lines-title">The campaign, <em>in motion</em></h2>
+      <p class="section-lede">Seven stories from the current GENiO shoot, from the open-back Aura jumpsuit to the Motion Hijab. Each one opens the full style with every colourway.</p>
+    </div>
+    <div class="lines-rail" id="lines-rail" tabindex="0" aria-label="Collections, scroll sideways"></div>
+  </section>
+
+  <!-- SHOP -->
+  <section class="shop light" id="shop" aria-labelledby="shop-title">
+    <div class="wrap">
+      <div class="shop-head">
+        <div>
+          <p class="eyebrow">The shop</p>
+          <h2 id="shop-title">Every piece, <em>in motion</em></h2>
+        </div>
+        <div class="shop-controls">
+          <div class="chips" id="cat-chips" role="group" aria-label="Filter by category"></div>
+          <label class="sort">
+            <span>Sort</span>
+            <select id="sort">
+              <option value="featured">Featured</option>
+              <option value="price-asc">Price, low to high</option>
+              <option value="price-desc">Price, high to low</option>
+              <option value="name">Name</option>
+            </select>
+          </label>
+        </div>
+      </div>
+      <p class="shop-status" id="shop-status" aria-live="polite"></p>
+      <div class="grid" id="grid"></div>
+      <div class="more-wrap"><button type="button" class="btn btn-ghost" id="more">Show more styles</button></div>
+    </div>
+  </section>
+
+  <!-- STUDIO: build a look -->
+  <section class="studio" id="studio" aria-labelledby="studio-title">
+    <div class="wrap studio-inner">
+      <div class="studio-copy">
+        <p class="eyebrow">Build a look · Cherri 4 PCS</p>
+        <h2 id="studio-title">Four pieces, <em>fifteen ways</em> to wear them</h2>
+        <p>Cherri comes as a sports bra, crop top, shorts and pants, in four colours. Switch pieces on and off, then take the full set or only the pieces you need. Prices are the store's own.</p>
+        <div class="studio-tone" id="studio-tone" role="group" aria-label="Colourway"></div>
+        <div class="studio-pieces" id="studio-pieces" role="group" aria-label="Pieces"></div>
+        <div class="studio-total">
+          <span id="studio-sum">4 pieces selected</span>
+          <button type="button" class="btn btn-solid" id="studio-add">Add the set</button>
+        </div>
+      </div>
+      <div class="studio-stage" id="studio-stage" aria-label="Look preview" role="img"></div>
+    </div>
+  </section>
+
+  <!-- THE FIT -->
+  <section class="fit light" id="fit" aria-labelledby="fit-title">
+    <div class="wrap fit-inner">
+      <div class="fit-visual">
+        <svg viewBox="0 0 260 380" class="fit-legging" aria-hidden="true">
+          <defs>
+            <linearGradient id="fitSheen" x1="0" x2="1">
+              <stop offset="0" stop-color="#fff" stop-opacity="0"/>
+              <stop offset=".45" stop-color="#fff" stop-opacity=".16"/>
+              <stop offset=".55" stop-color="#fff" stop-opacity=".02"/>
+              <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+            </linearGradient>
+            <pattern id="knit" width="6" height="6" patternUnits="userSpaceOnUse">
+              <path d="M0 3h6" stroke="#fff" stroke-opacity=".05"/>
+            </pattern>
+          </defs>
+          <path class="fit-body" d="M74 30h112l3 34H71z M71 64h118l8 110-14 186h-38l-15-180h-8l-15 180H63L49 174z"/>
+          <path d="M74 30h112l3 34H71z M71 64h118l8 110-14 186h-38l-15-180h-8l-15 180H63L49 174z" fill="url(#knit)"/>
+          <path d="M74 30h112l3 34H71z M71 64h118l8 110-14 186h-38l-15-180h-8l-15 180H63L49 174z" fill="url(#fitSheen)"/>
+          <path class="fit-seam" d="M71 64h118M130 64v116M98 64q-6 70 4 120M162 64q6 70-4 120"/>
+        </svg>
+        <button type="button" class="hotspot" id="hs-waist" data-spec="waist" style="--x:50%;--y:12%" aria-label="High-waisted"><span></span></button>
+        <button type="button" class="hotspot" id="hs-sculpt" data-spec="sculpt" style="--x:34%;--y:42%" aria-label="Anti-cellulite"><span></span></button>
+        <button type="button" class="hotspot" id="hs-stretch" data-spec="stretch" style="--x:68%;--y:64%" aria-label="Super stretchy"><span></span></button>
+        <button type="button" class="hotspot" id="hs-feel" data-spec="feel" style="--x:50%;--y:47%" aria-label="Second skin"><span></span></button>
+      </div>
+      <div class="fit-copy">
+        <p class="eyebrow">The fit</p>
+        <h2 id="fit-title">Built for <em>real curves</em></h2>
+        <ol class="specs" id="specs">
+          <li data-spec="waist" class="is-on">
+            <button type="button" id="spec-waist" aria-expanded="true"><span class="spec-k">Waist</span> High-waisted</button>
+            <p>GENiO leggings and sets are cut high-waisted, so they sit at your natural waist.</p>
+          </li>
+          <li data-spec="sculpt">
+            <button type="button" id="spec-sculpt" aria-expanded="false"><span class="spec-k">Finish</span> Anti-cellulite</button>
+            <p>A smoothing, anti-cellulite finish. It is one of the four promises in GENiO's own words: high quality, high-waisted, super stretchy, anti-cellulite.</p>
+          </li>
+          <li data-spec="feel">
+            <button type="button" id="spec-feel" aria-expanded="false"><span class="spec-k">Feel</span> Second skin</button>
+            <p>Styles like the Aura Jumpsuit are made to feel like a second skin that shapes, supports and moves with your body.</p>
+          </li>
+          <li data-spec="stretch">
+            <button type="button" id="spec-stretch" aria-expanded="false"><span class="spec-k">Fabric</span> Super stretchy</button>
+            <p>Polyester and spandex, made to stretch with you through every rep.</p>
+          </li>
+        </ol>
+        <button type="button" class="btn btn-ghost" id="open-size">Open the size guide</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- STORY -->
+  <section class="story" id="story" aria-labelledby="story-title">
+    <div class="wrap story-inner">
+      <p class="eyebrow">Our story</p>
+      <h2 id="story-title" class="story-quote">Made by a woman who couldn't find activewear that <em>fit her</em>.</h2>
+      <div class="story-cols">
+        <p>GENiO was founded in Nairobi in 2019 by Corazon Kwamboka, who still leads it as founder and CEO. A lover of sport and the gym, and a curvy size 16/18, she found that international brands didn't cater to her. So she started making her own.</p>
+        <p>That idea shapes every piece today: activewear for women of all sizes who want function and fashion in the same outfit. High-waisted, super stretchy, and sized from S to XXXL.</p>
+      </div>
+      <dl class="story-facts">
+        <div><dt>Founded</dt><dd>2019, Nairobi</dd></div>
+        <div><dt>Founder</dt><dd>Corazon Kwamboka</dd></div>
+        <div><dt>Stores</dt><dd>Ngong Rd &amp; Westlands</dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <!-- NEWSLETTER -->
+  <section class="circle light" aria-labelledby="circle-title">
+    <div class="wrap circle-inner">
+      <h2 id="circle-title">Join the <em>Inner Circle</em></h2>
+      <p>First look at new drops, restocks and members-only sets.</p>
+      <form class="circle-form" id="circle-form" novalidate>
+        <label for="circle-email" class="sr">Email address</label>
+        <input id="circle-email" type="email" placeholder="you@example.com" autocomplete="email" required>
+        <button type="submit" class="btn btn-solid">Join</button>
+      </form>
+      <p class="form-msg" id="circle-msg" aria-live="polite"></p>
+    </div>
+  </section>
+</main>
+
+<footer class="site-foot">
+  <div class="wrap foot-inner">
+    <div class="foot-brand">
+      <div class="wordmark big"><svg class="mark" viewBox="0 0 118.71 91.23" aria-hidden="true"><path d="M87,59.53H43.54L103.05,0H67.73a19.78,19.78,0,0,0-14,5.79L0,59.54H43.52L75.21,91.23H98.93a19.78,19.78,0,0,0,19.78-19.77V29.75H87Z"/></svg>GEN<span class="i">i</span>O</div>
+      <p>Women's activewear from Nairobi.</p>
+    </div>
+    <div class="foot-cols">
+      <div>
+        <h3>Shop</h3>
+        <a href="#shop" data-cat="sets">Sets</a>
+        <a href="#shop" data-cat="onepieces">Jumpsuits &amp; dresses</a>
+        <a href="#shop" data-cat="tops">Tops</a>
+        <a href="#shop" data-cat="headwear">Head gear</a>
+        <a href="#shop" data-cat="gifts">Gift cards</a>
+      </div>
+      <div>
+        <h3>Help</h3>
+        <button type="button" class="linklike" id="foot-size">Size guide</button>
+        <a href="#fit">Fabric &amp; care</a>
+        <a href="#story">About GENiO</a>
+        <span class="foot-note">Free delivery on orders over $300. Delivered within 2 weeks.</span>
+      </div>
+      <div class="foot-visit">
+        <h3>Visit</h3>
+        <p><strong>Ngong Road</strong><br>Applewood Adams, Shop 110, 1st Floor</p>
+        <p><strong>Westlands</strong><br>Shop 8, Eatery Strip Mall, Muthithi Rd</p>
+        <p><a href="tel:+254741307704">+254 741 307 704</a><br><a href="tel:+254715307703">+254 715 307 703</a></p>
+      </div>
+      <div>
+        <h3>Follow</h3>
+        <a href="https://www.instagram.com/genio_active/" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://www.facebook.com/genioactivewear/" target="_blank" rel="noopener">Facebook</a>
+        <a href="https://www.pinterest.com/genioactive/" target="_blank" rel="noopener">Pinterest</a>
+        <a href="https://x.com/genio_sport" target="_blank" rel="noopener">X</a>
+      </div>
+    </div>
+  </div>
+  <div class="wrap foot-base">
+    <span>© GENiO Active</span>
+    <span>Design concept for GENiO Active. Products, prices and photography come from genioactive.com.</span>
+  </div>
+</footer>
+
+<!-- MOBILE MENU -->
+<div class="menu-panel" id="menu-panel" hidden>
+  <nav aria-label="Mobile">
+    <a href="#lines">Collections</a>
+    <a href="#shop">Shop</a>
+    <a href="#studio">Build a look</a>
+    <a href="#fit">The fit</a>
+    <a href="#story">Our story</a>
+  </nav>
+</div>
+
+<!-- QUICK VIEW -->
+<div class="modal" id="qv" role="dialog" aria-modal="true" aria-labelledby="qv-name" hidden>
+  <div class="modal-scrim" data-close></div>
+  <div class="modal-card qv-card">
+    <button type="button" class="close" data-close aria-label="Close">×</button>
+    <div class="qv-stage" id="qv-stage"></div>
+    <div class="qv-info">
+      <p class="eyebrow" id="qv-cat"></p>
+      <h2 id="qv-name"></h2>
+      <p class="qv-price" id="qv-price"></p>
+      <p class="qv-desc" id="qv-desc"></p>
+      <div class="qv-block" id="qv-colours"></div>
+      <div class="qv-block" id="qv-options"></div>
+      <div class="qv-block" id="qv-size-block">
+        <div class="qv-label"><span>Size</span><button type="button" class="linklike" id="qv-size-guide">Size guide</button></div>
+        <div class="sizes" id="qv-sizes" role="radiogroup" aria-label="Size"></div>
+      </div>
+      <ul class="qv-feats" id="qv-feats"></ul>
+      <div class="qv-actions">
+        <div class="qty">
+          <button type="button" id="qv-minus" aria-label="Decrease quantity">−</button>
+          <output id="qv-qty">1</output>
+          <button type="button" id="qv-plus" aria-label="Increase quantity">+</button>
+        </div>
+        <button type="button" class="btn btn-solid" id="qv-add">Add to bag</button>
+      </div>
+      <p class="form-msg" id="qv-msg" aria-live="polite"></p>
+      <a class="qv-link" id="qv-link" href="https://genioactive.com/shop/" target="_blank" rel="noopener">View on genioactive.com <span aria-hidden="true">↗</span></a>
+    </div>
+  </div>
+</div>
+
+<!-- SIZE GUIDE -->
+<div class="modal" id="sg" role="dialog" aria-modal="true" aria-labelledby="sg-title" hidden>
+  <div class="modal-scrim" data-close></div>
+  <div class="modal-card sg-card">
+    <button type="button" class="close" data-close aria-label="Close">×</button>
+    <p class="eyebrow">Size guide</p>
+    <h2 id="sg-title">Find your size</h2>
+    <p class="muted">Body measurements in centimetres, as a general guide. Some styles run generous (the Opal Square Neck, for one), so check the note on each product page.</p>
+    <div class="table-wrap">
+      <table class="sg-table">
+        <thead><tr><th scope="col">Size</th><th scope="col">UK</th><th scope="col">Bust</th><th scope="col">Waist</th><th scope="col">Hips</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">S</th><td>8</td><td>83–87</td><td>65–69</td><td>91–95</td></tr>
+          <tr><th scope="row">M</th><td>10–12</td><td>88–94</td><td>70–76</td><td>96–102</td></tr>
+          <tr><th scope="row">L</th><td>14</td><td>95–101</td><td>77–83</td><td>103–109</td></tr>
+          <tr><th scope="row">XL</th><td>16</td><td>102–108</td><td>84–90</td><td>110–116</td></tr>
+          <tr><th scope="row">XXL</th><td>18</td><td>109–116</td><td>91–98</td><td>117–124</td></tr>
+          <tr><th scope="row">XXXL</th><td>20–22</td><td>117–125</td><td>99–107</td><td>125–133</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<!-- SEARCH -->
+<div class="modal search" id="search" role="dialog" aria-modal="true" aria-label="Search" hidden>
+  <div class="modal-scrim" data-close></div>
+  <div class="search-card">
+    <label for="search-input" class="sr">Search products</label>
+    <input id="search-input" type="search" placeholder="Search sets, leggings, Cherri…" autocomplete="off">
+    <ul class="search-results" id="search-results"></ul>
+  </div>
+</div>
+
+<!-- BAG -->
+<aside class="drawer" id="bag" aria-labelledby="bag-title" hidden>
+  <div class="drawer-scrim" data-close></div>
+  <div class="drawer-panel">
+    <div class="drawer-head">
+      <h2 id="bag-title">Your bag</h2>
+      <button type="button" class="close" data-close aria-label="Close bag">×</button>
+    </div>
+    <div class="ship" id="ship">
+      <p id="ship-text"></p>
+      <div class="ship-bar"><span id="ship-fill"></span></div>
+    </div>
+    <ul class="bag-list" id="bag-list"></ul>
+    <div class="drawer-foot">
+      <div class="bag-total"><span>Subtotal</span><strong id="bag-total"></strong></div>
+      <button type="button" class="btn btn-solid wide" id="checkout">Checkout</button>
+      <div class="handoff" id="handoff" hidden>
+        <p id="handoff-note"></p>
+        <ol id="handoff-list"></ol>
+      </div>
+    </div>
+  </div>
+</aside>
+
+<a class="preview-flag" href="https://genioactive.com/" target="_blank" rel="noopener">Design concept<span class="pf-long"> · Official store: genioactive.com</span> <span aria-hidden="true">↗</span></a>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="assets/catalogue.js"></script>
+<script src="assets/products.js"></script>
+<script src="assets/garments.js"></script>
+<script src="assets/hero.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>

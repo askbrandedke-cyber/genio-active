@@ -1,0 +1,5 @@
+screenshots/*.png
+!screenshots/desk-hero.png
+!screenshots/phone-hero.png
+__pycache__/
+.DS_Store
